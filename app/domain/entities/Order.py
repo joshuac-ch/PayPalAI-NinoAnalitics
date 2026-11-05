@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from datetime import datetime
-from app.domain.entities.OrdenItem import OrderItem
+from app.domain.entities.OrderItem import OrderItem
 @dataclass
 class Order:
-    id                  : int
+    _id: str | None = None
     seller_id           : int
     buyer_id            : int
     items               : list[OrderItem]

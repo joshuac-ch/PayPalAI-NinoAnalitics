@@ -3,7 +3,7 @@ from datetime import datetime
 
 @dataclass
 class TrakingEvent:
-    id                  : int
+    _id: str | None = None
     estado              : str
     lugar               : str
     fecha               : datetime

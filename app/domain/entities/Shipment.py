@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from datetime import datetime
-from app.domain.entities.TrakingEvent import TrakingEvent
+from app.domain.entities.TrackingEvent import TrakingEvent
 @dataclass
 class Shipment:
-    id                  : int
+    _id: str | None = None
     order_id            : int
     transportista       : str
     numero_seguimiento  : str
