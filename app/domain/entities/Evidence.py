@@ -3,7 +3,7 @@ from datetime import datetime
 
 @dataclass
 class Evidence:
-    _id: str | None = None
+    
     tipo        :str
     origin      : str
     reference   : str
@@ -11,4 +11,4 @@ class Evidence:
     fecha       : datetime
     created_at  : datetime
     updated_at  : datetime 
-    
+    _id: str | None = None

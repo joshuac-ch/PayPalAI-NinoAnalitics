@@ -3,15 +3,17 @@ from datetime import datetime
 from app.domain.entities.OrderItem import OrderItem
 @dataclass
 class Order:
-    _id: str | None = None
-    seller_id           : int
-    buyer_id            : int
+    
+    seller_id           : str
+    buyer_id            : str
     items               : list[OrderItem]
     monto               : float
     estado              : str
-    term_id             : int
-    paypal_id           : int
+    term_id             : str
+    paypal_id           : str
     riesgo              : int
+    ubicacion           : str
     terms_accepted_at   : datetime
     created_at          : datetime
-    updated_at          : datetime 
+    updated_at          : datetime
+    _id: str | None = None 

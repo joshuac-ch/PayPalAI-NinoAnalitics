@@ -5,11 +5,10 @@ from app.domain.entities.Evidence import Evidence
 from app.domain.entities.Offer import Offer
 @dataclass
 class Dispute:
-    _id: str | None = None
-    order_id        : int
-    seller_id       : int
-    buyer_id        : int
-    paypal_id       : int
+    order_id        : str
+    seller_id       : str
+    buyer_id        : str
+    paypal_id       : str
     motivo          : str
     estado          : str
     monto           : float 
@@ -21,3 +20,4 @@ class Dispute:
     resultado       : str
     created_at      : datetime
     updated_at      : datetime  
+    _id: str | None = None

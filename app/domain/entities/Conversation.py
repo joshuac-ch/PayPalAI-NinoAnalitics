@@ -4,8 +4,9 @@ from app.domain.entities.Message import Message
 
 @dataclass
 class Conversation:
-    _id: str | None = None
+   
     messages    : list[Message]
-    dispute_id  : int
+    dispute_id  : str
     created_at  : datetime
     updated_at  : datetime 
+    _id: str | None = None

@@ -1,8 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 @dataclass
-class Producto:
-    _id: str | None = None
+class Producto:   
     name                : str
     description         : str
     image               : str
@@ -10,3 +9,4 @@ class Producto:
     seller_id           : str
     created_at          : datetime
     updated_at          : datetime 
+    _id: str | None = None

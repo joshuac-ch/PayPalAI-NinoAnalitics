@@ -4,7 +4,7 @@ from enum import Enum
 
 @dataclass
 class Offer:
-    _id: str | None = None
+    
     monto           : float
     tipo            : str
     propuesta_por   : Enum["cliente","vendedor"]
@@ -12,4 +12,4 @@ class Offer:
     estado          : str
     created_at      : datetime
     updated_at      : datetime
-    
+    _id: str | None = None
